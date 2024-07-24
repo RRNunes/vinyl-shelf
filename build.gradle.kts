@@ -21,6 +21,8 @@ repositories {
 dependencies {
     implementation(libs.spring.boot.web)
     testImplementation(libs.spring.boot.test)
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("com.h2database:h2")
 }
 
 checkstyle {
