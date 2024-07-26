@@ -29,6 +29,9 @@ checkstyle {
     configDirectory = file("$rootDir/checkstyle")
 }
 
-//test {
-//    useJUnitPlatform()
-//}
+tasks.test {
+    useJUnitPlatform()
+    testLogging {
+        events("failed")
+    }
+}
