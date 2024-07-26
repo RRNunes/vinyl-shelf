@@ -25,6 +25,10 @@
         <property name="message" value="Line has trailing spaces."/>
     </module>
 
+    <module name="SuppressionFilter">
+        <property name="file" value="${config_loc}/suppressions.xml"/>
+    </module>
+
     <module name="TreeWalker">
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
@@ -62,7 +66,7 @@
         <module name="TypecastParenPad"/>
         <module name="WhitespaceAfter"/>
         <module name="WhitespaceAround"/>
-        <module name="Indentation"></module>
+        <module name="Indentation"/>
 
         <!-- Modifier Checks                                    -->
         <!-- See https://checkstyle.org/config_modifiers.html -->

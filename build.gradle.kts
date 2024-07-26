@@ -26,7 +26,7 @@ dependencies {
 }
 
 checkstyle {
-    configFile = file("checkstyle/checkstyle.xml")
+    configDirectory = file("$rootDir/checkstyle")
 }
 
 //test {
